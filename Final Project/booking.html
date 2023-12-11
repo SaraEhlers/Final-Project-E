@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact page">
+    <meta name="keywords" content="camping, hiking, supplies">
+    <meta name="author" content="Sara Ehlers">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <div style="background-color: palegreen;">
+        <header>
+            <h1>Storybook Campgrounds</h1>
+                <style>
+                    a {                                     /* Style for the Booking link */
+                    float: right;
+                    display: block;
+                    text-align: center;
+                    font-size: 100%;
+                    padding: 15px 17px;
+                    text-decoration: none;
+                    background-color: darkgreen;
+                    color: white;
+                    font-weight: bold;
+                    }
+                    a:hover {
+                    background-color: mintcream;
+                    color: darkgreen;
+                    }
+                </style>
+            <img src="images/enchanted_forest2.jpg" class="center" width="100%" height="100%"/>
+        </header> 
+        <nav id="nav_menu">
+            <style>
+                #nav_menu {
+                background-color: darkgreen;
+                }  
+                #nav_menu ul li a {
+                background-color: darkgreen;
+                }  
+                #nav_menu a:hover {
+                color: darkgreen;
+                }
+            </style>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="campgrounds.html">Campgrounds</a></li>
+                <li><a href="accomodations.html">Accomodations</a></li>
+                <li><a href="activites.html">Activities</a></li>
+                <li><a href="gear.html">Gear</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Trip Selection</h2>
+            <h3>Select which campsite you will be visiting:</h3> 
+            <form id="trip-selection" action="campsite" value="select" id="select"></form>
+                 <input type="radio" name="campsite" value="Site 1" id="Enchanted">
+                 <label for="Enchanted">Enchanted Forest</label><br>
+     
+                 <input type="radio" name="campsite" value="Site 2" id="Mystic">
+                 <label for="Mystic">Mystic Lake</label><br>
+     
+                 <input type="radio" name="campsite" value="Site 3" id="Glimmer">
+                 <label for="Glimmer">Glimmer Stone Hills</label><br>
+         </form>
+         <h3>Select if you will be using a cabin, RV park, or neither:</h3>
+         <form id="lodging-slection" acton="lodging" method="post">
+             <input type="radio" name="lodging" value="Option 1" id="Cabin">
+             <label for="Cabin">Cabin</label>
+     
+             <input type="radio" name="lodging" value="Option 2" id="RV">
+             <label for="RV">RV Park</label>
+     
+             <input type="radio" name="lodging" value="Option 3" id="none">
+             <label for="none">Neither</label>
+         </form>
+         <label for="cabinSize">Cabin Size:</label>
+         <select id="cabinSize" name="cabinSize">
+             <option value="choose">Please choose a cabin size:</option>
+             <option value="small">1 bed, 1 bath</option>
+             <option value="medium">2 bed, 1 bath</option>
+             <option value="large">3 bed, 2 bath</option>
+         </select>
+         <h3>Select any equipment you will be renting:</h3>
+         <div class="rental container">
+             <fieldset>
+                 <label><input type="checkbox" name="equipment" value="Fishing">Fishing Pole</label>
+                 <lable><input type="checkbox" name="equipment" value="Bait">Fishing Bait</lable>
+                 <label><input type="checkbox" name="equipment" value="Boat">Fishing Boat</label>
+                 <label><input type="checkbox" name="equipment" value="Canoe">Canoe</label>
+                 <label><input type="checkbox" name="equipment" value="Tube">Inner Tube</label>
+                 <label><input type="checkbox" name="equipment" value="Basketball">Basketball</label>
+                 <label><input type="checkbox" name="equipment" value="Soccer">Soccer ball</label>
+                 <label><input type="checkbox" name="equipment" value="Tennis">Tennis racket</label>
+             </fieldset>
+         </div>
+         <label for="questions">If you have any questions, add them here (up to 500 characters):</label>
+         <textarea name="questions" id="questions" rows="10" cols="60"></textarea>
+         <span id="textCount" class="hide"></span>
+     
+         <input type="submit" id="submit" value="submit" /> 
+         <script src=""></script>
+        </main>
+        <footer>
+            <nav>
+                <div class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="campgrounds.html">Campgrounds</a>
+                    <a href="accomodations.html">Accomodations</a>
+                    <a href="activities.html">Activities</a>
+                    <a href="gear.html">Gear</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="booking.html">Booking</a>
+                </div>
+            </nav>
+            <style>
+                .navbar a.active {
+                    color: darkgreen;
+                }
+            </style>
+        </footer>
+    </div>
+</body>
+</html>

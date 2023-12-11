@@ -1,0 +1,40 @@
+/* Slider */
+.slider {
+    max-width: 500px;
+    margin: 0px auto 30px auto;
+}
+.slider-viewer {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+.slid-group {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slider {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+}
+.slide:first-child {
+    display: block;
+}
+
+/* Slider Buttons */
+.slide-buttons {
+    text-align: center;
+}
+.slide-btn {
+    border: none;
+    background: none;
+    font-size: 200%;
+    line-height: 0.5em;
+    color: #000;
+}
+.slide-btn.active, .slide-btn:hover {
+    color: purple;
+    cursor: pointer;
+}

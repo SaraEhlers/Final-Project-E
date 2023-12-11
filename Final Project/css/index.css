@@ -1,0 +1,51 @@
+/* Main Content */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "section" "aside" "arti";
+    margin: 1%;
+    padding: .5em;
+    font-size: 150%;
+    grid-template-rows: 1 / span 12; 
+    grid-template-columns: 1 / span 12;
+    column-gap: 2.5%;
+}
+
+article {
+    grid-area: arti;
+    grid-row: 1/2;
+    grid-column: 1/12;
+}
+
+
+section {
+    margin: .5em;
+    padding: .5em;
+    grid-row: 2/12;
+    grid-column: 1/6;
+}
+section div {
+    padding: 0 0 .25em .25em;
+}
+
+aside {
+    padding: .5em 0;
+    grid-row: 3/12;
+    grid-column: 6/12;
+}
+aside p {
+    margin: .25em;
+    padding: .5em;
+}
+aside ul {
+    margin: .25em;
+    padding: 1em;
+
+}
+aside image {
+    float: right;
+    max-width: 40%;
+    min-width: 150px;
+    margin: .5em;
+    padding: .5em;
+}

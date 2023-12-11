@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A fairytale camping getaway.">
+    <meta name="keywords" content="camping, hiking, supplies">
+    <meta name="author" content="Sara Ehlers">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="slider-stylesheet" href="css/tabs.css">
+</head>
+<body>
+    <div style="background-color: rgb(224, 198, 236);">
+        <header>
+            <h1>Storybook Campgrounds</h1>
+            <a href="booking.html">Booking</a>
+                <style>
+                    a {                                     /* Style for the Booking link */
+                    float: right;
+                    display: block;
+                    text-align: center;
+                    font-size: 100%;
+                    padding: 15px 17px;
+                    text-decoration: none;
+                    background-color: rgb(101, 32, 136);
+                    color: white;
+                    font-weight: bold;
+                    }
+                    a:hover {
+                    background-color: mintcream;
+                    color: rgb(101, 32, 136);
+                    }
+                </style>
+            <img src="images/enchanted_forest2.jpg" class="center" width="100%" height="100%"/>
+        </header>
+        <nav id="nav_menu">
+            <style>
+                #nav_menu {
+                background-color: rgb(101, 32, 136);
+                }
+                #nav_menu ul li a {
+                    background-color: rgb(101, 32, 136);
+                }
+                #nav_menu a:hover {
+                    color: rgb(101, 32, 136);
+                }
+            </style>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="campgrounds.html">Campgrounds</a></li>
+                <li><a href="accomodations.html">Accomodations</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="gear.html">Gear</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Conact Us</a></li>
+            </ul>
+        </nav>
+        <h2>A Magical Time Awaits You</h2>
+
+        <main>
+            <article>
+                <p>Come visit our magical campgrounds! We have numerous activites that are fun for the whole family!</p>
+
+                <p>Emerse yourself in experiences straight out of a stroybook. Hike through the Enchanted Forest and discover numerous magical creatures. Spend a leasurly day at Mystic Lake swimming with mermaids. Set up camp on Glimmer Stone Hills where you'll have an unparalled view of the stars.</p>
+            
+                <p> We have numerous activities to add to your trip plans, some hosted by some of your favorite fairtale characters!</p>
+            </article>
+
+            <section class="page-panel">
+                <h3>Campgrounds</h3>
+                <div class="gallery">
+                    <div id="photo-viewer"></div>
+                    <div id="thumbnails"></div>
+
+                    <a href="images/enchanted_forest.jpg" class="thumb-active" title="Enchanted Forest" alt="Enchanted Forest"></a>
+                    
+                    <a href="images/mystic_river.jpg" class="thumb" alt="Mystic Lake"></a>
+                    
+                    <a href="images/mountains.jpg" class="thumb" alt="Glimmer Stone Hills"></a>
+                    
+                </div><!--gallery-->
+            
+                <h3>Accomodations</h3>
+                
+                <p>We have various on site accomodations to meet your camping needs. Rental cabins for those who want to comforts of home, RV parks when you want to bring home with you, and showers for the more adventureous who want to pitch a tent and sleep under the stars.</p>
+                
+                <h3>Magical Flora and Fuana</h3>
+                
+                <p>The mythical creatures from ancient myths and stories aren't a myth here at Storybook Campgrounds! Some of these amazing creatures will mingle with you as you go about your activities, and a few will even participate in special activites! If your lucky, maybe you'll encounter some of the rarer ones!</p>
+            </section>
+            
+            <aside>
+                <p>We have three fantastical loactions to choose from for your camping trip.</p>
+                <ul>
+                    <li>Enchanted Forest</li>
+                    <li>Mystic Lake</li>
+                    <li>Glimmer Stone Hills</li>
+                </ul>
+                <img src="images/cabin.jpg" alt="cabin"/>
+            </aside>
+           
+            <script src="js/tabs.js"></script>
+            <script src="js/jquery-1.11.0.js"></script>
+        </main>
+        <footer>
+            <nav>
+                <div class="navbar">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="campgrounds.html">Campgrounds</a>
+                    <a href="accomodations.html">Accomodations</a>
+                    <a href="activities.html">Activities</a>
+                    <a href="gear.html">Gear</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="booking.html">Booking</a>
+                </div>
+            </nav>
+            <style>
+                .navbar a.active {
+                    color: rgb(101, 32, 136);
+                }
+            </style>
+        </footer>
+    </div>
+</body>
+</html>

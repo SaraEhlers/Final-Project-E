@@ -1,0 +1,35 @@
+main {
+    display: grid;
+    grid-template-areas: "article" "section";
+    font-size: 150%;
+    grid-template-rows: 1 / span 12;
+    grid-template-columns: 1 / span 6;
+    column-gap: 2.5%;
+}
+article {
+    grid-area: article;
+    grid-row: 1/2;
+}
+article p {
+    text-align: center;
+    padding-left: 2em;
+}
+
+section {
+    grid-area: "section";
+    grid-row: 2/12;
+}
+section p {
+    padding-left: 2em;
+}
+section ul {
+    margin: 1em;
+}
+section ul li {
+    margin-left: 1em;
+    padding-left: 2em;
+}
+image {
+    vertical-align: middle;
+    float: right;
+}

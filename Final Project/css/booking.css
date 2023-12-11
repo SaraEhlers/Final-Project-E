@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template: repeat(5, auto) / 12fr; 
+    grid-template-areas: 
+    "head"
+    "navi"
+    "main"
+    "foot";
+    font-size: 100%;
+    background-color: mintcream;
+    margin: 1px 0 1px 0;
+    border: 5 inherit;  
+
+}
+header {
+    grid-area: head;
+    margin: 1px 0 1px 0;
+    padding: 0;
+    
+}
+h1 {
+    text-align: center;
+    font-size: 400%;
+    color: black;
+    font-style: italic;
+    padding-top: 2%;
+}
+header img {
+    size-adjust: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+    color: black;
+    background-color: mintcream;
+    padding-bottom: 1%;
+}
+h3 {
+    margin: .5em;
+    padding: .5em;
+}
+/* Main content*/
+main {
+    grid-area: main;
+    margin: 1%;
+    padding: .5em;
+    font-size: 150%;
+}
+/* Footer */
+footer {
+    grid-area: foot;
+}
+
+/* Add navbar */
+.center { 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    } 
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    }
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 120%;
+    }
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: mintcream;
+    color: black;
+}
+    
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: mintcream;
+    color: black;
+}
+
+/* Add navigation menu under banner */
+#nav_menu { 
+    grid-area: navi; 
+    height: 50px;
+    background-color: darkgreen;
+}
+#nav_menu ul {
+    display: grid;
+    grid-template: auto / repeat(7, 1fr);  
+    font-size: 110%;
+    list-style-type: none; /*remove bullets */
+    margin: 0;
+    padding: 0; 
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none; /* Removes underline */
+    background-color: darkgreen;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+#nav_menu a:hover {
+    background-color: mintcream;
+    color: black;
+}
+#nav_menu a.current {
+    background-color: #04AA6D;
+    color: mintcream;
+}
+
+/* Form styles*/
+form {
+    font-family:Arial, Helvetica, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+}
+.one-third, .two-thirds {
+    border: 12px solid black;
+    float: left;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+.one-third {width: 268px;}
+.two-thirds {width: 530px;}
+.one-third fieldset {border: none; margin: 0.5em;}
+.two-thirds fieldset {border: none; margin: 2.5em;}
+
+.container .one-third, .container .two-thirds {height: 35em;}
